@@ -1,0 +1,72 @@
+﻿<div class="customers view">
+    <div class="container">
+        <header>
+            <h3>Customer Registration</h3>
+        </header>
+        <div class="row">
+            <div class="span3">
+                First Name:
+                <br />
+                <input ng-model="newCustomer.firstName" type="text" placeholder="First Name">
+            </div>
+            <div class="span3">
+                Last Name:
+                <br />
+                <input ng-model="newCustomer.lastName" type="text" placeholder="Last Name">
+            </div>
+            <div class="span6">
+                City:
+                <br />
+                <input ng-model="newCustomer.city" type="text" placeholder="Customer City">
+                <button id="submitCustomer" class="btn btn-primary" type="button" 
+                    ng-disabled="!newCustomer.firstName || !newCustomer.lastName || !newCustomer.city"
+                    ng-click="insertCustomer()">Register</button>
+            </div>
+        </div>
+
+        <header>
+            <h3>Place orders</h3>
+        </header>
+
+        <div class="row">
+            <div class="span3">
+                Customer Name:
+                <br />
+                <input ng-model="newCustomer.searchName" type="text" placeholder="Your first name">
+            </div>
+            <div class="span3">
+                Product:
+                <br />
+                <input ng-model="newCustomer.product" type="text" placeholder="Product to buy">
+            </div>
+            <div class="span3">
+                Price:
+                <br />
+                <input ng-model="newCustomer.price" type="number" placeholder="Price">
+            </div>
+            <div class="span3">
+                Quantity:
+                <br />
+                <input ng-model="newCustomer.quantity" type="number" placeholder="Quantity">
+            </div>
+            <div class="span6">
+                <br />
+                <button id="submitOrder" class="btn btn-primary" type="button"
+                        ng-disabled="!newCustomer.product || !newCustomer.price || !newCustomer.quantity "
+                        ng-click="addOrder()">Add to cart</button>
+            </div>
+        </div>
+
+        <br /><br />
+        <div>
+            <div class="row cardContainer">
+                <div class="span3 card" ng-repeat="customer in customers | orderBy:'id'">
+                    <button class="btn close cardClose" ng-click="deleteCustomer(customer.id)">&times;</button>
+                    <div class="cardHeader">{{customer.firstName + ' ' + customer.lastName}}</div>
+                    <div class="cardBody">{{customer.city}}</div>
+                    <a href="#/customerorders/{{customer.id}}" class="cardBody btn-link">View {{ customer.orders.length }} Orders</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

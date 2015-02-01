@@ -1,0 +1,14 @@
+{
+  "name": "AngularJSDemos",
+  "version": "0.0.1",
+  "author":"Aashish R",
+
+  "dependencies": {
+    "express": "4.9.7",
+    "angular":"1.3.10",
+    "angular-route":    "1.3.10",
+    "angular-sanitize": "1.3.10",
+    "angular-mocks":    "1.3.10",
+    "jquery":           "1.9.1"
+  }
+}

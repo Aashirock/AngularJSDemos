@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Manager</title>
+    <link href="data/bootstrap.min.css" rel="stylesheet" />
+    <link href="data/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="data/customerManagementStyles.css" rel="stylesheet" />
+</head>
+<body ng-app="customersApp">
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand " href="#/">
+                    <img src="data/images/people.png" alt="logo"> Customer Manager
+                </a>
+                <ul class="nav nav-pills" data-ng-controller="NavbarController">
+                    <li ng-class="{'active':getClass('/customers')}"><a href="#/customers">Customers</a></li>
+                    <li ng-class="{'active':getClass('/orders')}"><a href="#/orders">Orders</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div animated-view></div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/jquery/jquery.min.js"></script>
+
+
+    <script src="scripts/bootstrap.js"></script>
+
+
+
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    <script src="app/services/customersService.js"></script>
+    <script src="app/directives/animatedView.js"></script>
+</body>
+</html>

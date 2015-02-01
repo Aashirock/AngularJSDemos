@@ -1,0 +1,379 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 warn package.json AngularJSDemos@0.0.1 No description
+5 warn package.json AngularJSDemos@0.0.1 No repository field.
+6 warn package.json AngularJSDemos@0.0.1 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/aaramamurthy/Projects/AngularJSDemos',
+8 verbose install   [ 'express',
+8 verbose install     'angular',
+8 verbose install     'angular-route',
+8 verbose install     'angular-sanitize',
+8 verbose install     'angular-mocks',
+8 verbose install     'jquery',
+8 verbose install     'bootstrap' ] ]
+9 info preinstall AngularJSDemos@0.0.1
+10 verbose readDependencies using package.json deps
+11 verbose already installed skipping express@4.9.7 /Users/aaramamurthy/Projects/AngularJSDemos
+12 verbose already installed skipping angular@1.3.10 /Users/aaramamurthy/Projects/AngularJSDemos
+13 verbose cache add [ 'angular-route@1.3.10', null ]
+14 verbose cache add name=undefined spec="angular-route@1.3.10" args=["angular-route@1.3.10",null]
+15 verbose parsed url { protocol: null,
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'angular-route@1.3.10',
+15 verbose parsed url   path: 'angular-route@1.3.10',
+15 verbose parsed url   href: 'angular-route@1.3.10' }
+16 verbose cache add [ 'angular-sanitize@1.3.10', null ]
+17 verbose cache add name=undefined spec="angular-sanitize@1.3.10" args=["angular-sanitize@1.3.10",null]
+18 verbose parsed url { protocol: null,
+18 verbose parsed url   slashes: null,
+18 verbose parsed url   auth: null,
+18 verbose parsed url   host: null,
+18 verbose parsed url   port: null,
+18 verbose parsed url   hostname: null,
+18 verbose parsed url   hash: null,
+18 verbose parsed url   search: null,
+18 verbose parsed url   query: null,
+18 verbose parsed url   pathname: 'angular-sanitize@1.3.10',
+18 verbose parsed url   path: 'angular-sanitize@1.3.10',
+18 verbose parsed url   href: 'angular-sanitize@1.3.10' }
+19 verbose cache add name="angular-route" spec="1.3.10" args=["angular-route","1.3.10"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '1.3.10',
+20 verbose parsed url   path: '1.3.10',
+20 verbose parsed url   href: '1.3.10' }
+21 verbose addNamed [ 'angular-route', '1.3.10' ]
+22 verbose addNamed [ '1.3.10', '1.3.10' ]
+23 verbose cache add [ 'angular-mocks@1.3.10', null ]
+24 verbose cache add name=undefined spec="angular-mocks@1.3.10" args=["angular-mocks@1.3.10",null]
+25 verbose parsed url { protocol: null,
+25 verbose parsed url   slashes: null,
+25 verbose parsed url   auth: null,
+25 verbose parsed url   host: null,
+25 verbose parsed url   port: null,
+25 verbose parsed url   hostname: null,
+25 verbose parsed url   hash: null,
+25 verbose parsed url   search: null,
+25 verbose parsed url   query: null,
+25 verbose parsed url   pathname: 'angular-mocks@1.3.10',
+25 verbose parsed url   path: 'angular-mocks@1.3.10',
+25 verbose parsed url   href: 'angular-mocks@1.3.10' }
+26 verbose cache add name="angular-sanitize" spec="1.3.10" args=["angular-sanitize","1.3.10"]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: '1.3.10',
+27 verbose parsed url   path: '1.3.10',
+27 verbose parsed url   href: '1.3.10' }
+28 verbose addNamed [ 'angular-sanitize', '1.3.10' ]
+29 verbose addNamed [ '1.3.10', '1.3.10' ]
+30 silly lockFile 544eecea-angular-route-1-3-10 angular-route@1.3.10
+31 verbose lock angular-route@1.3.10 /Users/aaramamurthy/.npm/544eecea-angular-route-1-3-10.lock
+32 silly lockFile 6ec54f8d-angular-sanitize-1-3-10 angular-sanitize@1.3.10
+33 verbose lock angular-sanitize@1.3.10 /Users/aaramamurthy/.npm/6ec54f8d-angular-sanitize-1-3-10.lock
+34 verbose cache add [ 'jquery@1.9.1', null ]
+35 verbose cache add name=undefined spec="jquery@1.9.1" args=["jquery@1.9.1",null]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: 'jquery@1.9.1',
+36 verbose parsed url   path: 'jquery@1.9.1',
+36 verbose parsed url   href: 'jquery@1.9.1' }
+37 verbose cache add name="angular-mocks" spec="1.3.10" args=["angular-mocks","1.3.10"]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: '1.3.10',
+38 verbose parsed url   path: '1.3.10',
+38 verbose parsed url   href: '1.3.10' }
+39 verbose addNamed [ 'angular-mocks', '1.3.10' ]
+40 verbose addNamed [ '1.3.10', '1.3.10' ]
+41 silly lockFile 896da699-angular-mocks-1-3-10 angular-mocks@1.3.10
+42 verbose lock angular-mocks@1.3.10 /Users/aaramamurthy/.npm/896da699-angular-mocks-1-3-10.lock
+43 verbose cache add name="jquery" spec="1.9.1" args=["jquery","1.9.1"]
+44 verbose parsed url { protocol: null,
+44 verbose parsed url   slashes: null,
+44 verbose parsed url   auth: null,
+44 verbose parsed url   host: null,
+44 verbose parsed url   port: null,
+44 verbose parsed url   hostname: null,
+44 verbose parsed url   hash: null,
+44 verbose parsed url   search: null,
+44 verbose parsed url   query: null,
+44 verbose parsed url   pathname: '1.9.1',
+44 verbose parsed url   path: '1.9.1',
+44 verbose parsed url   href: '1.9.1' }
+45 verbose addNamed [ 'jquery', '1.9.1' ]
+46 verbose addNamed [ '1.9.1', '1.9.1' ]
+47 silly lockFile fa90476c-jquery-1-9-1 jquery@1.9.1
+48 verbose lock jquery@1.9.1 /Users/aaramamurthy/.npm/fa90476c-jquery-1-9-1.lock
+49 verbose cache add [ 'bootstrap@2.3.1', null ]
+50 verbose cache add name=undefined spec="bootstrap@2.3.1" args=["bootstrap@2.3.1",null]
+51 verbose parsed url { protocol: null,
+51 verbose parsed url   slashes: null,
+51 verbose parsed url   auth: null,
+51 verbose parsed url   host: null,
+51 verbose parsed url   port: null,
+51 verbose parsed url   hostname: null,
+51 verbose parsed url   hash: null,
+51 verbose parsed url   search: null,
+51 verbose parsed url   query: null,
+51 verbose parsed url   pathname: 'bootstrap@2.3.1',
+51 verbose parsed url   path: 'bootstrap@2.3.1',
+51 verbose parsed url   href: 'bootstrap@2.3.1' }
+52 verbose cache add name="bootstrap" spec="2.3.1" args=["bootstrap","2.3.1"]
+53 verbose parsed url { protocol: null,
+53 verbose parsed url   slashes: null,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: null,
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: null,
+53 verbose parsed url   hash: null,
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: '2.3.1',
+53 verbose parsed url   path: '2.3.1',
+53 verbose parsed url   href: '2.3.1' }
+54 verbose addNamed [ 'bootstrap', '2.3.1' ]
+55 verbose addNamed [ '2.3.1', '2.3.1' ]
+56 silly lockFile 51bfafc4-bootstrap-2-3-1 bootstrap@2.3.1
+57 verbose lock bootstrap@2.3.1 /Users/aaramamurthy/.npm/51bfafc4-bootstrap-2-3-1.lock
+58 verbose request where is /angular-route
+59 verbose request registry http://npm.paypal.com/
+60 verbose request id 82d6ec39d29b28a3
+61 verbose url raw /angular-route
+62 verbose url resolving [ 'http://npm.paypal.com/', './angular-route' ]
+63 verbose url resolved http://npm.paypal.com/angular-route
+64 verbose request where is http://npm.paypal.com/angular-route
+65 info trying registry request attempt 1 at 16:27:52
+66 http GET http://npm.paypal.com/angular-route
+67 verbose request where is /angular-sanitize
+68 verbose request registry http://npm.paypal.com/
+69 verbose url raw /angular-sanitize
+70 verbose url resolving [ 'http://npm.paypal.com/', './angular-sanitize' ]
+71 verbose url resolved http://npm.paypal.com/angular-sanitize
+72 verbose request where is http://npm.paypal.com/angular-sanitize
+73 info trying registry request attempt 1 at 16:27:52
+74 http GET http://npm.paypal.com/angular-sanitize
+75 verbose request where is /angular-mocks
+76 verbose request registry http://npm.paypal.com/
+77 verbose url raw /angular-mocks
+78 verbose url resolving [ 'http://npm.paypal.com/', './angular-mocks' ]
+79 verbose url resolved http://npm.paypal.com/angular-mocks
+80 verbose request where is http://npm.paypal.com/angular-mocks
+81 info trying registry request attempt 1 at 16:27:52
+82 http GET http://npm.paypal.com/angular-mocks
+83 verbose request where is /jquery
+84 verbose request registry http://npm.paypal.com/
+85 verbose url raw /jquery
+86 verbose url resolving [ 'http://npm.paypal.com/', './jquery' ]
+87 verbose url resolved http://npm.paypal.com/jquery
+88 verbose request where is http://npm.paypal.com/jquery
+89 info trying registry request attempt 1 at 16:27:52
+90 http GET http://npm.paypal.com/jquery
+91 verbose request where is /bootstrap
+92 verbose request registry http://npm.paypal.com/
+93 verbose url raw /bootstrap
+94 verbose url resolving [ 'http://npm.paypal.com/', './bootstrap' ]
+95 verbose url resolved http://npm.paypal.com/bootstrap
+96 verbose request where is http://npm.paypal.com/bootstrap
+97 info trying registry request attempt 1 at 16:27:52
+98 http GET http://npm.paypal.com/bootstrap
+99 http 200 http://npm.paypal.com/angular-sanitize
+100 silly registry.get cb [ 200,
+100 silly registry.get   { 'content-type': 'application/json; charset=utf-8',
+100 silly registry.get     'x-registry': 'https://registry.npmjs.org/',
+100 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+100 silly registry.get     etag: '"1YU2XL32TMCLAZYMA8WNJTMEA"',
+100 silly registry.get     'cache-control': 'max-age=60',
+100 silly registry.get     'accept-ranges': 'bytes',
+100 silly registry.get     via: '1.1 varnish',
+100 silly registry.get     age: '0',
+100 silly registry.get     'x-served-by': 'cache-dfw1829-DFW',
+100 silly registry.get     'x-cache': 'MISS',
+100 silly registry.get     'x-cache-hits': '0',
+100 silly registry.get     'x-timer': 'S1422442673.876194,VS0,VE83',
+100 silly registry.get     vary: 'Accept,accept-encoding',
+100 silly registry.get     'keep-alive': 'timeout=10, max=50',
+100 silly registry.get     connection: 'Keep-Alive',
+100 silly registry.get     'content-encoding': 'gzip',
+100 silly registry.get     date: 'Wed, 28 Jan 2015 10:57:54 GMT',
+100 silly registry.get     'transfer-encoding': 'chunked' } ]
+101 http 200 http://npm.paypal.com/angular-route
+102 silly registry.get cb [ 200,
+102 silly registry.get   { 'content-type': 'application/json; charset=utf-8',
+102 silly registry.get     'x-registry': 'https://registry.npmjs.org/',
+102 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+102 silly registry.get     etag: '"DFKGTDTB7OYVHRK9YVLWSZQED"',
+102 silly registry.get     'cache-control': 'max-age=60',
+102 silly registry.get     'accept-ranges': 'bytes',
+102 silly registry.get     via: '1.1 varnish',
+102 silly registry.get     age: '0',
+102 silly registry.get     'x-served-by': 'cache-dfw1820-DFW',
+102 silly registry.get     'x-cache': 'MISS',
+102 silly registry.get     'x-cache-hits': '0',
+102 silly registry.get     'x-timer': 'S1422442673.875229,VS0,VE118',
+102 silly registry.get     vary: 'Accept,accept-encoding',
+102 silly registry.get     'keep-alive': 'timeout=10, max=50',
+102 silly registry.get     connection: 'Keep-Alive',
+102 silly registry.get     'content-encoding': 'gzip',
+102 silly registry.get     date: 'Wed, 28 Jan 2015 10:57:54 GMT',
+102 silly registry.get     'transfer-encoding': 'chunked' } ]
+103 http 200 http://npm.paypal.com/jquery
+104 silly registry.get cb [ 200,
+104 silly registry.get   { 'content-type': 'application/json; charset=utf-8',
+104 silly registry.get     'x-registry': 'https://registry.npmjs.org/',
+104 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+104 silly registry.get     etag: '"DT6M7C1FB2Z7YWLMIOYE46RF3"',
+104 silly registry.get     'cache-control': 'max-age=60',
+104 silly registry.get     'accept-ranges': 'bytes',
+104 silly registry.get     via: '1.1 varnish',
+104 silly registry.get     age: '36',
+104 silly registry.get     'x-served-by': 'cache-dfw1822-DFW',
+104 silly registry.get     'x-cache': 'HIT',
+104 silly registry.get     'x-cache-hits': '1',
+104 silly registry.get     'x-timer': 'S1422442673.866532,VS0,VE0',
+104 silly registry.get     vary: 'Accept,accept-encoding',
+104 silly registry.get     'keep-alive': 'timeout=10, max=50',
+104 silly registry.get     connection: 'Keep-Alive',
+104 silly registry.get     'content-encoding': 'gzip',
+104 silly registry.get     date: 'Wed, 28 Jan 2015 10:57:54 GMT',
+104 silly registry.get     'transfer-encoding': 'chunked' } ]
+105 silly lockFile b5b3c23f-tize-angular-sanitize-1-3-10-tgz http://npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz
+106 verbose lock http://npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz /Users/aaramamurthy/.npm/b5b3c23f-tize-angular-sanitize-1-3-10-tgz.lock
+107 silly lockFile d864c2ee-r-route-angular-route-1-3-10-tgz http://npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz
+108 verbose lock http://npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz /Users/aaramamurthy/.npm/d864c2ee-r-route-angular-route-1-3-10-tgz.lock
+109 verbose addRemoteTarball [ 'http://npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz',
+109 verbose addRemoteTarball   '061510c0e369ecd35c42c64f6809ab987ac00e0a' ]
+110 silly lockFile 5bd65fa2-ypal-com-jquery-jquery-1-9-1-tgz http://npm.paypal.com/jquery/-/jquery-1.9.1.tgz
+111 verbose lock http://npm.paypal.com/jquery/-/jquery-1.9.1.tgz /Users/aaramamurthy/.npm/5bd65fa2-ypal-com-jquery-jquery-1-9-1-tgz.lock
+112 verbose addRemoteTarball [ 'http://npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz',
+112 verbose addRemoteTarball   '416254d7675ed8cfaf35401068d363e9127da655' ]
+113 verbose addRemoteTarball [ 'http://npm.paypal.com/jquery/-/jquery-1.9.1.tgz',
+113 verbose addRemoteTarball   'e4cd4835faaefbade535857613c0fc3ff2adaf34' ]
+114 info retry fetch attempt 1 at 16:27:53
+115 verbose fetch to= /tmp/npm-2899-ArqvK-t9/npm.paypal.com/jquery/-/jquery-1.9.1.tgz
+116 info retry fetch attempt 1 at 16:27:53
+117 verbose fetch to= /tmp/npm-2899-ArqvK-t9/npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz
+118 info retry fetch attempt 1 at 16:27:53
+119 verbose fetch to= /tmp/npm-2899-ArqvK-t9/npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz
+120 http GET http://npm.paypal.com/jquery/-/jquery-1.9.1.tgz
+121 http GET http://npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz
+122 http GET http://npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz
+123 http 200 http://npm.paypal.com/angular-mocks
+124 silly registry.get cb [ 200,
+124 silly registry.get   { 'content-type': 'application/json; charset=utf-8',
+124 silly registry.get     'x-registry': 'https://registry.npmjs.org/',
+124 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+124 silly registry.get     etag: '"CCC4BO015HHC9T6PMMR0YJ5SY"',
+124 silly registry.get     'cache-control': 'max-age=60',
+124 silly registry.get     'accept-ranges': 'bytes',
+124 silly registry.get     via: '1.1 varnish',
+124 silly registry.get     age: '0',
+124 silly registry.get     'x-served-by': 'cache-dfw1830-DFW',
+124 silly registry.get     'x-cache': 'MISS',
+124 silly registry.get     'x-cache-hits': '0',
+124 silly registry.get     'x-timer': 'S1422442673.868444,VS0,VE119',
+124 silly registry.get     vary: 'Accept,accept-encoding',
+124 silly registry.get     'keep-alive': 'timeout=10, max=50',
+124 silly registry.get     connection: 'Keep-Alive',
+124 silly registry.get     'content-encoding': 'gzip',
+124 silly registry.get     date: 'Wed, 28 Jan 2015 10:57:54 GMT',
+124 silly registry.get     'transfer-encoding': 'chunked' } ]
+125 silly lockFile 48e09bef-r-mocks-angular-mocks-1-3-10-tgz http://npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz
+126 verbose lock http://npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz /Users/aaramamurthy/.npm/48e09bef-r-mocks-angular-mocks-1-3-10-tgz.lock
+127 verbose addRemoteTarball [ 'http://npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz',
+127 verbose addRemoteTarball   '952e9426cd911b295f8dd44a07d77b22aaeb9ba6' ]
+128 info retry fetch attempt 1 at 16:27:53
+129 verbose fetch to= /tmp/npm-2899-ArqvK-t9/npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz
+130 http GET http://npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz
+131 http 200 http://npm.paypal.com/bootstrap
+132 silly registry.get cb [ 200,
+132 silly registry.get   { 'content-type': 'application/json; charset=utf-8',
+132 silly registry.get     'x-registry': 'https://registry.npmjs.org/',
+132 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+132 silly registry.get     etag: '"JW01XUZ3K8O8K4CWV1E8MUB2"',
+132 silly registry.get     'cache-control': 'max-age=60',
+132 silly registry.get     'accept-ranges': 'bytes',
+132 silly registry.get     via: '1.1 varnish',
+132 silly registry.get     age: '0',
+132 silly registry.get     'x-served-by': 'cache-dfw1822-DFW',
+132 silly registry.get     'x-cache': 'MISS',
+132 silly registry.get     'x-cache-hits': '0',
+132 silly registry.get     'x-timer': 'S1422442673.851386,VS0,VE47',
+132 silly registry.get     vary: 'Accept,accept-encoding',
+132 silly registry.get     'keep-alive': 'timeout=10, max=50',
+132 silly registry.get     connection: 'Keep-Alive',
+132 silly registry.get     'content-encoding': 'gzip',
+132 silly registry.get     date: 'Wed, 28 Jan 2015 10:57:54 GMT',
+132 silly registry.get     'transfer-encoding': 'chunked' } ]
+133 silly lockFile 51bfafc4-bootstrap-2-3-1 bootstrap@2.3.1
+134 silly lockFile 51bfafc4-bootstrap-2-3-1 bootstrap@2.3.1
+135 http 200 http://npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz
+136 http 200 http://npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz
+137 http 200 http://npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz
+138 silly lockFile b5b3c23f-tize-angular-sanitize-1-3-10-tgz http://npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz
+139 silly lockFile b5b3c23f-tize-angular-sanitize-1-3-10-tgz http://npm.paypal.com/angular-sanitize/-/angular-sanitize-1.3.10.tgz
+140 silly lockFile 6ec54f8d-angular-sanitize-1-3-10 angular-sanitize@1.3.10
+141 silly lockFile 6ec54f8d-angular-sanitize-1-3-10 angular-sanitize@1.3.10
+142 silly lockFile 48e09bef-r-mocks-angular-mocks-1-3-10-tgz http://npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz
+143 silly lockFile 48e09bef-r-mocks-angular-mocks-1-3-10-tgz http://npm.paypal.com/angular-mocks/-/angular-mocks-1.3.10.tgz
+144 silly lockFile 896da699-angular-mocks-1-3-10 angular-mocks@1.3.10
+145 silly lockFile 896da699-angular-mocks-1-3-10 angular-mocks@1.3.10
+146 silly lockFile d864c2ee-r-route-angular-route-1-3-10-tgz http://npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz
+147 silly lockFile d864c2ee-r-route-angular-route-1-3-10-tgz http://npm.paypal.com/angular-route/-/angular-route-1.3.10.tgz
+148 silly lockFile 544eecea-angular-route-1-3-10 angular-route@1.3.10
+149 silly lockFile 544eecea-angular-route-1-3-10 angular-route@1.3.10
+150 http 200 http://npm.paypal.com/jquery/-/jquery-1.9.1.tgz
+151 silly lockFile 5bd65fa2-ypal-com-jquery-jquery-1-9-1-tgz http://npm.paypal.com/jquery/-/jquery-1.9.1.tgz
+152 silly lockFile 5bd65fa2-ypal-com-jquery-jquery-1-9-1-tgz http://npm.paypal.com/jquery/-/jquery-1.9.1.tgz
+153 silly lockFile fa90476c-jquery-1-9-1 jquery@1.9.1
+154 silly lockFile fa90476c-jquery-1-9-1 jquery@1.9.1
+155 error Error: version not found: bootstrap@2.3.1
+155 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:125:12
+155 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+155 error     at Object.oncomplete (fs.js:108:15)
+156 error If you need help, you may report this *entire* log,
+156 error including the npm and node versions, at:
+156 error     <http://github.com/npm/npm/issues>
+157 error System Darwin 13.4.0
+158 error command "node" "/usr/local/bin/npm" "install"
+159 error cwd /Users/aaramamurthy/Projects/AngularJSDemos
+160 error node -v v0.10.35
+161 error npm -v 1.4.28
+162 verbose exit [ 1, true ]
