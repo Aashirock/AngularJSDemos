@@ -1,6 +1,6 @@
 ﻿//This handles retrieving data and is used by controllers. 3 options (server, factory, provider) with 
 //each doing the same thing just structuring the functions/data differently.
-app.service('customersService', function () {
+app.service('customersService', function ($log) {
     this.getCustomers = function () {
         return customers;
     };
@@ -33,18 +33,23 @@ app.service('customersService', function () {
         return null;
     };
 
-    this.getCustomerCart=function(value){
+    this.getCustomerCart=function(firstName,lastName){
         for (var i=0;i<customers.length;i++){
-            if(customers[i].firstName === value){
+            if(customers[i].firstName === firstName && customers[i].lastName===lastName){
                 return customers[i];
+            }
+            else
+            {
+                return false;
             }
         }
     };
 
-    this.addOrder=function(product,price,quantity,orderTotal,searchName) {
-        var customerCart=this.getCustomerCart(searchName);
-        if(!('orders' in customerCart)) {
-            console.log("First order");
+    this.addOrder=function(product,price,quantity,orderTotal,firstName,lastName) {
+        $log.info("Adding orders to cart for " + firstName + " " + lastName);
+        var customerCart=this.getCustomerCart(firstName,lastName);
+        if(customerCart && !('orders' in customerCart)) {
+            $log.info("First order processed for " + customerCart.firstName + " "+ customerCart.lastName);
             customerCart['orders'] =
                 [
                     {
@@ -55,9 +60,9 @@ app.service('customersService', function () {
                     }
                 ]
         }
-        else
+        else if (customerCart && 'orders' in customerCart)
         {
-            console.log("Next orders");
+            $log.info("Further orders processed for "+ customerCart.firstName + " " + customerCart.lastName);
             customerCart['orders'].push(
                     {
                         product: product,
@@ -66,8 +71,10 @@ app.service('customersService', function () {
                         orderTotal: orderTotal
                     }
             );
-
-            console.log(customerCart);
+        }
+        else
+        {
+            $log.warn("No user name found , Please register yourselves");
         }
     };
 

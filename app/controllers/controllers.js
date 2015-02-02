@@ -3,9 +3,9 @@
 //This controller retrieves data from the customersService and associates it with the $scope
 //The $scope is ultimately bound to the customers view
 
-console.log("Initiliased controllers");
 
-app.controller('CustomersController', function ($scope, customersService) {
+
+app.controller('CustomersController', function ($scope, customersService,$log) {
 
     //I like to have an init() for controllers that need to perform some initialization. Keeps things in
     //one place...not required though especially in the simple example below
@@ -30,9 +30,12 @@ app.controller('CustomersController', function ($scope, customersService) {
         var price = $scope.newCustomer.price;
         var quantity = $scope.newCustomer.quantity;
         var orderTotal= price * quantity;
-        var searchName=$scope.newCustomer.searchName;
-        console.log("Total order " + orderTotal);
-        customersService.addOrder(product, price, quantity,orderTotal,searchName);
+        var fullName=$scope.newCustomer.searchName.split(" ");
+        var firstName=fullName[0];
+        var lastName=fullName[1];
+        $log.info(firstName +" "+ lastName);
+        $log.info("Total order " + orderTotal);
+        customersService.addOrder(product, price, quantity,orderTotal,firstName,lastName);
         $scope.newCustomer.product = '';
         $scope.newCustomer.price = '';
         $scope.newCustomer.quantity = '';
@@ -78,8 +81,8 @@ app.controller('OrdersController', function ($scope, customersService) {
     }
 });
 
-app.controller('NavbarController', function ($scope, $location) {
-    console.log("In NavBar controller");
+app.controller('NavbarController', function ($scope, $location,$log) {
+    $log.info("In NavBar controller");
     $scope.getClass = function (path) {
         if ($location.path().substr(0, path.length) == path) {
             return true
